@@ -1,0 +1,12 @@
+.Pages button {
+    margin-right: 8px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.form > * {
+    width: 100%;
+}
