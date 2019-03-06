@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -27,9 +28,9 @@ import { FourthComponent } from './fourth/fourth.component';
     MatFormFieldModule,
     FormsModule, ReactiveFormsModule,
     MatInputModule,
-    MatSelectModule,
+    MatSelectModule, MatStepperModule,
     MatButtonModule, MatCheckboxModule,
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule
   ],
   providers: [],
