@@ -1,0 +1,12 @@
+.options-group {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.options-button {
+margin: 5px;
+}
+
+.answer {
+margin: 15px 0;
+}

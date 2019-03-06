@@ -25,28 +25,6 @@
   </div>
 -->
 
-<mat-vertical-stepper linear="true" #stepper>
-  <mat-step *ngFor="let question of questions" [stepControl]="userForm">
-    <form [formGroup]="userForm">
-      <ng-template matStepLabel>Question {{question.q_num}}</ng-template>
-      {{question.des}}
-      <mat-form-field>
-        <input matInput placeholder="Your Answer" formControlName="ctrl" required>
-      </mat-form-field>
-      <div>
-        <button ng-disabled="question.q_num === 1" mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </form>
-  </mat-step>
-  <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-    You are now done.
-    <div>
-      <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
-    </div>
-  </mat-step>
-</mat-vertical-stepper>
+
 
 <router-outlet></router-outlet>
