@@ -8,6 +8,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
+import { MatRadioModule } from '@angular/material/radio';
+import { HttpClientModule }    from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +18,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { FourthComponent } from './fourth/fourth.component';
-import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -32,8 +34,8 @@ import { MatRadioModule } from '@angular/material/radio';
     MatInputModule, MatCardModule,
     MatSelectModule, MatStepperModule,
     MatButtonModule, MatCheckboxModule,
-    BrowserModule, 
-    AppRoutingModule
+    BrowserModule, HttpClientModule,
+    AppRoutingModule, MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
