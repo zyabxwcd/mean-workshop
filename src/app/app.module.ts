@@ -8,6 +8,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,10 +28,10 @@ import { MatRadioModule } from '@angular/material/radio';
     FourthComponent
   ],
   imports: [
-    BrowserAnimationsModule,
+    BrowserAnimationsModule, MatTableModule,
     MatFormFieldModule, MatRadioModule,
     FormsModule, ReactiveFormsModule,
-    MatInputModule, MatCardModule,
+    MatInputModule, MatCardModule, HttpClientModule,
     MatSelectModule, MatStepperModule,
     MatButtonModule, MatCheckboxModule,
     BrowserModule, 
