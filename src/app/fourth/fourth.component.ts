@@ -36,7 +36,7 @@ export class FourthComponent implements OnInit {
 
   addUser() {
     console.log(this.name)
-    this.crudService.addUser({name:, email:, password:})
+    this.crudService.addUser({name:this.name, email:this.email, password:this.password})
     console.log(this.name)
   }  
 
